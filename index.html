@@ -1,0 +1,616 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+		<style>
+			.gradient-text {
+				font-size: 120px;
+				font-weight: 700;
+				background: linear-gradient(to right, #0090f7, #ba62fc, #f2416b);
+				-webkit-background-clip: text;
+				color: transparent;
+			}
+			.gradient-text2 {
+				font-size: 120px;
+				font-weight: 700;
+				background: linear-gradient(97deg, #BB64FF 42%, #F2416B 74%, #EB7500);
+				-webkit-background-clip: text;
+				color: transparent;
+			}
+			
+			.gradient-text3 {
+				font-size: 120px;
+				font-weight: 700;
+				background: linear-gradient(90deg, #35A98A 0%, #6DD400);
+				-webkit-background-clip: text;
+				color: transparent;
+			}
+			.gradient-text4 {
+				font-size: 120px;
+				font-weight: 700;
+				background: linear-gradient(108deg,#0894ff,#c959dd 34%,#ff2e54 68%,#ff9004);
+				-webkit-background-clip: text;
+				color: transparent;
+			}
+
+			.gradient-text5 {
+				font-size: 120px;
+				font-weight: 700;
+				background: linear-gradient(90deg, #2e1f7c, #6652e1);
+				-webkit-background-clip: text;
+				color: transparent;
+			}
+
+			.gradient-text6 {
+				font-size: 120px;
+				font-weight: 700;
+				background: linear-gradient(90deg, #9f310e, #e34912);
+				-webkit-background-clip: text;
+				color: transparent;
+			}
+			
+
+			.item-name {
+				font-size: 18px;
+				font-weight: 700;
+				color: #fff;
+			}
+			.item-color1 {
+				background-color: rgb(147, 170, 242);
+			}
+			.item-color2 {
+				background-color: rgb(168, 209, 206);
+			}
+			.item-color3 {
+				background-color: rgb(248, 171, 214);
+			}
+			.item-color4 {
+				background-color: rgb(202, 214, 198);
+			}
+			.apple-intelligence-glow {
+					height: 50vh;
+					--igradient: linear-gradient(to bottom right,#0894FF 0%,#C959DD 34%,#FF2E54 68%,#FF9004);
+					position: absolute;
+					z-index: 0;
+					inset: 0;
+					border: 0;
+					filter: blur(1px)
+			}
+
+			.apple-intelligence-glow::after {
+					--bg-size: calc(100% + 14px);
+					content: "";
+					pointer-events: none;
+					position: absolute;
+					inset: 0;
+					background: var(--igradient) 50%/var(--bg-size) var(--bg-size);
+					border-radius: 28px;
+					border: 3px solid rgba(0,0,0,0);
+					mask: linear-gradient(hsla(0,0%,100%,0),hsla(0,0%,100%,0)),linear-gradient(hsl(0,0%,100%),hsl(0,0%,100%));
+					mask-clip: padding-box,border-box;
+					mask-composite: intersect
+			}
+
+			.apple-intelligence-glow.apple-intelligence-glow-2 {
+					height: 50vh;
+					filter: blur(7px)
+			}
+			.apple-intelligence-glow.apple-intelligence-glow-2::after {
+					border: 8px solid rgba(0,0,0,0)
+			}
+
+			.kin-item {
+					width: 100px;
+					height: 100px;
+					background: #ff2e54;
+					border-radius: 50%;
+					position: absolute;
+					top: 40%;
+					left: 40%;
+					color: #222;
+					text-align: center;
+					line-height: 100px;
+			}
+			.kin-item2 {
+				color: #eda4ff;
+				background: #000;
+			}
+			.jing-title {
+				font-size: 50px;
+			}
+			.final-words {
+				font-size: 80px;
+				font-weight: 700;
+				background-image: url('./apple-bao.jpg');
+				box-decoration-break: clone;
+    		background-repeat: no-repeat;
+				background-position: bottom;
+				background-size: 100% 90%;
+				margin-top: -2px;
+				-webkit-background-clip: text;
+				color: transparent;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<p class="gradient-text">走马观花</p>
+				</section>
+				<section>
+					<div style="display: flex; flex-wrap: wrap;">
+						<div
+							style="width: 120px;height: 120px;border-radius: 20px;
+							box-shadow: 2px 4px 12px #00000014; text-align: center; display: flex;align-items: center;
+							justify-content: center; margin: 10px;"
+							class="item-color1"
+							data-kinesisdistance-item
+							data-ks-strength="50"
+							data-ks-transform="translate"
+							data-ks-interaction="repulsion"
+							data-ks-startdistance="150"
+						>
+							<p class="item-name">官网改版</p>
+						</div>
+						<div
+							style="width: 120px;height: 120px;border-radius: 20px;
+							box-shadow: 2px 4px 12px #00000014; text-align: center; display: flex;align-items: center;
+							justify-content: center;margin: 10px;"
+							class="item-color2"
+							data-kinesisdistance-item
+							data-ks-strength="50"
+							data-ks-transform="translate"
+							data-ks-interaction="repulsion"
+							data-ks-startdistance="150"
+						>
+							<p class="item-name">OCR模版版本</p>
+						</div>
+						<div
+							style="width: 120px;height: 120px;border-radius: 20px;
+							box-shadow: 2px 4px 12px #00000014; text-align: center; display: flex;align-items: center;
+							justify-content: center;margin: 10px;"
+							class="item-color1"
+							data-kinesisdistance-item
+							data-ks-strength="50"
+							data-ks-transform="translate"
+							data-ks-interaction="repulsion"
+							data-ks-startdistance="150"
+						>
+							<p class="item-name">管理后台微前端</p>
+						</div>
+						<div
+							style="width: 120px;height: 120px;border-radius: 20px;
+							box-shadow: 2px 4px 12px #00000014; text-align: center; display: flex;align-items: center;
+							justify-content: center;margin: 10px;"
+							class="item-color4"
+							data-kinesisdistance-item
+							data-ks-strength="50"
+							data-ks-transform="translate"
+							data-ks-interaction="repulsion"
+							data-ks-startdistance="150"
+						>
+							<p class="item-name">BFF</p>
+						</div>
+						<div
+							style="width: 120px;height: 120px;border-radius: 20px;
+							box-shadow: 2px 4px 12px #00000014; text-align: center; display: flex;align-items: center;
+							justify-content: center;margin: 10px;"
+							class="item-color3"
+							data-kinesisdistance-item
+							data-ks-strength="50"
+							data-ks-transform="translate"
+							data-ks-interaction="repulsion"
+							data-ks-startdistance="150"
+						>
+							<p class="item-name">分级诊疗版本</p>
+						</div>
+						<div
+							style="width: 120px;height: 120px;border-radius: 20px;
+							box-shadow: 2px 4px 12px #00000014; text-align: center; display: flex;align-items: center;
+							justify-content: center;margin: 10px;"
+							class="item-color1"
+							data-kinesisdistance-item
+							data-ks-strength="50"
+							data-ks-transform="translate"
+							data-ks-interaction="repulsion"
+							data-ks-startdistance="150"
+						>
+							<p class="item-name">学术版小程序</p>
+						</div>
+						<div
+							style="width: 120px;height: 120px;border-radius: 20px;
+							box-shadow: 2px 4px 12px #00000014; text-align: center; display: flex;align-items: center;
+							justify-content: center;margin: 10px;"
+							class="item-color4"
+							data-kinesisdistance-item
+							data-ks-strength="50"
+							data-ks-transform="translate"
+							data-ks-interaction="repulsion"
+							data-ks-startdistance="150"
+						>
+							<p class="item-name">打分平台需求版本</p>
+						</div>
+						<div
+							style="width: 120px;height: 120px;border-radius: 20px;
+							box-shadow: 2px 4px 12px #00000014; text-align: center; display: flex;align-items: center;
+							justify-content: center;margin: 10px;"
+							class="item-color3"
+							data-kinesisdistance-item
+							data-ks-strength="50"
+							data-ks-transform="translate"
+							data-ks-interaction="repulsion"
+							data-ks-startdistance="150"
+						>
+							<p class="item-name">MDT一期</p>
+						</div>
+						<div
+							style="width: 120px;height: 120px;border-radius: 20px;
+							box-shadow: 2px 4px 12px #00000014; text-align: center; display: flex;align-items: center;
+							justify-content: center;margin: 10px;"
+							class="item-color3"
+							data-kinesisdistance-item
+							data-ks-strength="50"
+							data-ks-transform="translate"
+							data-ks-interaction="repulsion"
+							data-ks-startdistance="150"
+						>
+							<p class="item-name">MDT二期</p>
+						</div>
+						<div
+							style="width: 120px;height: 120px;border-radius: 20px;
+							box-shadow: 2px 4px 12px #00000014; text-align: center; display: flex;align-items: center;
+							justify-content: center;margin: 10px;"
+							class="item-color1"
+							data-kinesisdistance-item
+							data-ks-strength="50"
+							data-ks-transform="translate"
+							data-ks-interaction="repulsion"
+							data-ks-startdistance="150"
+						>
+							<p class="item-name">411预约评估</p>
+						</div>
+						<div
+							style="width: 120px;height: 120px;border-radius: 20px;
+							box-shadow: 2px 4px 12px #00000014; text-align: center; display: flex;align-items: center;
+							justify-content: center;margin: 10px;"
+							class="item-color4"
+							data-kinesisdistance-item
+							data-ks-strength="50"
+							data-ks-transform="translate"
+							data-ks-interaction="repulsion"
+							data-ks-startdistance="150"
+						>
+							<p class="item-name">言语康复小程序</p>
+						</div>
+						<div
+							style="width: 120px;height: 120px;border-radius: 20px;
+							box-shadow: 2px 4px 12px #00000014; text-align: center; display: flex;align-items: center;
+							justify-content: center;margin: 10px;"
+							class="item-color3"
+							data-kinesisdistance-item
+							data-ks-strength="50"
+							data-ks-transform="translate"
+							data-ks-interaction="repulsion"
+							data-ks-startdistance="150"
+						>
+							<p class="item-name">专科地图小程序</p>
+						</div>
+						<div
+							style="width: 120px;height: 120px;border-radius: 20px;
+							box-shadow: 2px 4px 12px #00000014; text-align: center; display: flex;align-items: center;
+							justify-content: center;margin: 10px;"
+							class="item-color1"
+							data-kinesisdistance-item
+							data-ks-strength="50"
+							data-ks-transform="translate"
+							data-ks-interaction="repulsion"
+							data-ks-startdistance="150"
+						>
+							<p class="item-name">会诊转购药版本</p>
+						</div>
+						<div
+							style="width: 120px;height: 120px;border-radius: 20px;
+							box-shadow: 2px 4px 12px #00000014; text-align: center; display: flex;align-items: center;
+							justify-content: center;margin: 10px;"
+							class="item-color2"
+							data-kinesisdistance-item
+							data-ks-strength="50"
+							data-ks-transform="translate"
+							data-ks-interaction="repulsion"
+							data-ks-startdistance="150"
+						>
+							<p class="item-name">大数据导出平台</p>
+						</div>
+						<div
+							style="width: 120px;height: 120px;border-radius: 20px;
+							box-shadow: 2px 4px 12px #00000014; text-align: center; display: flex;align-items: center;
+							justify-content: center;margin: 10px;"
+							class="item-color4"
+							data-kinesisdistance-item
+							data-ks-strength="50"
+							data-ks-transform="translate"
+							data-ks-interaction="repulsion"
+							data-ks-startdistance="150"
+						>
+							<p class="item-name">京东健康互医购药</p>
+						</div>
+						<div
+							style="width: 120px;height: 120px;border-radius: 20px;
+							box-shadow: 2px 4px 12px #00000014; text-align: center; display: flex;align-items: center;
+							justify-content: center;margin: 10px;"
+							class="item-color3"
+							data-kinesisdistance-item
+							data-ks-strength="50"
+							data-ks-transform="translate"
+							data-ks-interaction="repulsion"
+							data-ks-startdistance="150"
+						>
+							<p class="item-name">三级等保</p>
+						</div>
+
+					</div>
+					
+				</section>
+				<section>
+					<p class="gradient-text2">亡羊补牢</p>
+				</section>
+				<section>
+					<div class="apple-intelligence-glow"></div>
+					<div class="apple-intelligence-glow apple-intelligence-glow-2">
+					</div>
+					<div style="display: flex; height: 50vh; padding-left: 50px; flex-direction: column; align-items: flex-start;justify-content: center;">
+						<p>1. 利用 ARMS 能力完善日志记录</p>
+						<p>2. 管理后台上传组件及 OSS 初始化的处理</p>
+					</div>
+				</section>
+				<section>
+					<p class="gradient-text">未雨绸缪</p>
+				</section>
+				<section style="height: 50vh;">
+					<div style="height: 50vh; position: absolute; top: 0; z-index: 1;">
+						<canvas id="demo" style="height: 500px;width: 100%;"></canvas>
+					</div>
+					<div style="display: flex; position: absolute; bottom: 0; left: 0;
+					z-index: 2; flex-direction: column;text-align: left;width: 80%;
+					padding-left: 50px;
+					align-items: flex-start;justify-content: center;">
+						<p>1. 拒绝巨石应用，推进微前端的落地（由点到面，ocr/分级诊疗）</p>
+						<p>2. 小程序生态的关注，能力预研（能与不能，好与不好）</p>
+					</div>
+				</section>
+				<section>
+					<p class="gradient-text3">攻坚克难</p>
+				</section>
+				<section>
+					<video style="width: 100%; height: 100%;"
+						autoplay
+						loop
+						muted
+						src="./power.mp4">
+					</video>
+					<div style="position: absolute; top: 0;display: flex;width:80%;height: 100%;
+					flex-direction: column;padding-left: 50px;
+					align-items: flex-start;justify-content: space-between;text-align: left;">
+						<p>1. BFF的调研与实践（0.5、跨界DDD）</p>
+						<p>2. 言语小程序的实现方案（分贝、录音流、准确性方案）</p>
+					</div>
+				</section>
+				<section>
+					<p class="gradient-text4">塞翁失马</p>
+				</section>
+				<section>
+					<div style="height: 50vh;">
+						<!-- 线上问题：加了日志后没有全面确认 -->
+						<div
+							style="width: 100%;height: 100%;background: #000;"
+							data-kinesispath
+							data-ks-path="M30 56.0018C81 -12 97 -12.0003 161 30.0001C225 72.0004 242 89.9999 302 30.0001"
+						>
+							
+							<div
+								class="kin-item kin-item2"
+								data-kinesispath-element
+								data-ks-strength="0"
+							>流程</div>
+							<div
+								class="kin-item kin-item2"
+								data-kinesispath-element
+								data-ks-strength="0.5"
+							>敬畏</div>
+							<div
+								class="kin-item"
+								data-kinesispath-element
+								data-ks-strength="1.0"
+							>
+							日志	
+						</div>
+						</div>
+					</div>
+				</section>
+				<section>
+					<p class="gradient-text5">难念的经</p>
+				</section>
+				<section>
+					<div>
+						<p class="fragment fade-up jing-title">
+							<span style="color: #FF9004;">虎头</span><span style="color: #147d89;">蛇尾</span></p>
+						<p class="fragment">oss规范</p>
+						<p class="fragment">BFF模式</p>
+						<p class="fragment">优化项</p>
+						<p class="fragment">okr</p>
+						<p class="fragment">...</p>
+						
+					</div>
+				</section>
+				<section>
+					<div>
+						<p class="fragment fade-up jing-title" style="color: #0031ea;">三而竭</p>
+						<p class="fragment">历史债务...</p>
+						<p class="fragment">人员变动...</p>
+						<p class="fragment">信心不足...</p>
+					</div>
+				</section>
+				<section>
+					<p class="gradient-text6">仰望星空</p>
+				</section>
+				<section>
+					<div style="display: flex; height: 50vh;display: flex;
+					align-items: center;justify-content: center;">
+						<div
+							style="width: 50%;height: 50%;background: #708dfa;position: relative;
+							border-radius: 20px;display: flex;align-items: center;justify-content: center;"
+							data-kinesisdepth
+							data-ks-perspective="500"
+						>
+							<div
+								data-kinesisdepth-element
+								data-ks-depth="100"
+								style="background-color: transparent;
+									border-radius: 10px;
+									position: absolute;
+									border: solid 3px rgb(255, 175, 70);
+									text-align: center;
+									line-height: 100px;
+									color: rgb(255, 175, 70);
+									width: 100px;
+									height: 100px;"
+							>规范</div>
+							<div
+								data-kinesisdepth-element
+								data-ks-depth="200"
+								style="background-color: transparent;
+									border-radius: 10px;
+									position: absolute;
+									text-align: center;
+									line-height: 100px;
+									border: solid 3px rgb(255, 175, 70);
+									width: 100px;
+									color: rgb(255, 175, 70);
+									height: 100px;"
+							>团结</div>
+							<div
+								data-kinesisdepth-element
+								data-ks-depth="300"
+								style="background-color: transparent;
+									position: absolute;
+									border-radius: 10px;
+									text-align: center;
+									line-height: 100px;
+									color: rgb(255, 175, 70);
+									border: solid 3px rgb(255, 175, 70);
+									width: 100px;
+									height: 100px;"
+							>强大</div>
+						</div>
+					</div>
+				</section>
+				<section>
+					<p class="gradient-text4">现学现卖</p>
+				</section>
+				<section>
+					<p class="final-words">Just be happy and control what you can control</p>
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script src="plugin/kn/kinesis.es.js"></script>
+		<script src="plugin/kn/kinesisdistance.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+		<script>
+			const canvas = document.getElementById('demo');
+			var height = 500;
+			canvas.width = 1192;
+			canvas.height = height;
+			canvas.style.backgroundColor = 'black';
+			var points = [];
+			var mouse = {
+					x: 0,
+					y: 9999
+			};
+			var animationId;
+			const ctx = canvas.getContext('2d');
+			function Point(x, y, speed, width, color) {
+					this.x = x;
+					this.y = y;
+					this.width = width;
+					this.color = color;
+					this.alpha = Math.random() - .1;
+					this.speed = speed;
+					this.active = true;
+					this.physx = function() {
+							this.y += this.speed;
+							if (this.y > canvas.height)
+									this.kill()
+					}
+					;
+					this.kill = function() {
+							points.splice(points.indexOf(this), 1);
+							this.active = false
+					}
+					;
+					this.draw = function() {
+							ctx.beginPath();
+							ctx.arc(this.x, this.y, this.width, 0, Math.PI * 2, true);
+							ctx.fillStyle = this.color;
+							ctx.lineWidth = this.width;
+							ctx.save();
+							ctx.globalAlpha = this.alpha;
+							ctx.fill();
+							ctx.restore()
+					}
+			}
+			function drawFirework() {
+					ctx.clearRect(0, 0, canvas.width, canvas.height);
+					for (var i = 0; i < 4; i++) {
+							var posX = mouse.x + Math.random() * 10;
+							var posY = mouse.y + Math.random() * 10;
+							points.push(new Point(posX,posY,1 + Math.random() * 2, 8,"white"))
+					}
+					for (var i in points) {
+							if (points[i].active) {
+									points[i].draw();
+									points[i].physx()
+							}
+					}
+					animationId = requestAnimationFrame(drawFirework)
+			}
+
+
+			canvas.addEventListener('mousemove', function(e) {
+					mouse.x = e.clientX - 100;
+					mouse.y = e.clientY - 150;
+			});
+			canvas.addEventListener('mouseout', function(e) {
+					mouse.x = 0;
+					mouse.y = 9999;
+					isAnimating = false;
+			});
+			drawFirework();
+		</script>
+	</body>
+</html>
